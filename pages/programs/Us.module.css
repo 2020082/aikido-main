@@ -1,0 +1,144 @@
+.container {
+
+    justify-content: center;
+    background-color: white;
+    color: black;
+
+}
+
+.programBox1,
+.programBox2,
+.programBox3,
+.programBox4,
+.programBox5 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    top: 60vh;
+
+    background-color: #86a7fd;
+    color: #ffffff;
+    opacity: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+}
+.programBox1,
+.programBox3,
+.programBox5 {
+
+    margin-left: 100px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.programBox5 {
+    margin-bottom: 40%;
+}
+.programBox2,
+.programBox4 {
+
+    margin-left: 0px;
+    left: 120vh;
+    box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.PgText1,
+.PgText3,
+.PgText5 {
+    text-align: left;
+    display: flex;
+    color: black;
+}
+.PgText2,
+.PgText4 {
+    text-align: right;
+    display: flex;
+    color: black;
+}
+.IM,
+.MIM,
+.HTM,
+.CS,
+.SE,
+.MSE,
+.MC,
+.IR,
+.MPA,
+.EE,
+.ME,
+.FLE,
+.FD {
+    width: 600px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+
+}
+/* left texts */
+.IM {
+    margin: -23% 30% 5%;
+}
+.MIM {
+    margin: -3% 30% 5%;
+}
+.HTM {
+    margin: 17% 30% 5%;
+}
+.IR {
+    margin: -23% 21% 5%;
+}
+.MC {
+    margin: -3% 21% 5%;
+}
+.MPA {
+    margin: 17% 21% 5%;
+}
+.FD {
+    margin: -3% 35% 5%;
+}
+/* right texts */
+.CS {
+    margin: -23% -320% 5%;
+    left: 150%;
+}
+.SE {
+    margin: -3% -320% 5%;
+    left: 150%;
+}
+.MSE {
+    margin: 17% -320% 5%;
+    left: 150%;
+}
+.EE {
+    margin: -23% -316% 5%;
+    left: 150%;
+}
+.ME {
+    margin: -3% -316% 5%;
+    left: 150%;
+}
+.FLE {
+    margin: 17% -316% 5%;
+    left: 150%;
+}
+.IM:hover,
+.MIM:hover,
+.HTM:hover,
+.CS:hover,
+.SE:hover,
+.MSE:hover,
+.MC:hover,
+.IR:hover,
+.MPA:hover,
+.EE:hover,
+.ME:hover,
+.FLE:hover,
+.FD:hover {
+    width: 600px;
+    color: #4070f4;
+    transition: ease 0.5s;
+
+}

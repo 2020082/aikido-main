@@ -1,0 +1,93 @@
+.container {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+.introduction,
+.qualification,
+.contact {
+    position: relative;
+    top: 600px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    width: 400px;
+    height: 500px;
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    background-color: rgba(64, 112, 244, 0.5);
+    border-radius: 45px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0; 
+    transform: translateY(50px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.introduction,
+.qualification {
+    margin-top: 50px;
+}
+.contact {
+    margin-bottom: 40%;
+}
+.introductionBox,
+.qualificationBox,
+.contactBox {
+
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    margin: -283px 398px 10%;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    opacity: 1;
+    color: black;
+}
+
+.h1 {
+    color: #4070f4;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+    display: inline;
+}
+.h2{
+    color: black;
+    text-align: left;
+    font-size: 40px;
+    color: #4070f4;
+    margin-left: 50px;
+
+}
+.h3 {
+    color: black;
+    text-align: left;
+    font-size: 35px;
+    margin-left: 50px;
+
+}
+.h4 {
+
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+.h5 {
+    text-align: left;
+    margin-left: 50px;
+}
+.visible {
+    opacity: 0.7;
+    transform: translateY(0); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}

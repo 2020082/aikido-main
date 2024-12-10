@@ -1,0 +1,209 @@
+/** @format */
+
+.container {
+    background-color: white;
+    color: black;
+    font-family: "Helvetica", sans-serif;
+    overflow-x: hidden;
+}
+.SU,
+.SS,
+.SA {
+    opacity: 0;
+    position: relative;
+    background-color: #6b93ff;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 400px;
+    left: 300px;
+    font-size: 50px;
+    color: black;
+    z-index: 30;
+    transform: translateY(60px);
+}
+
+.SS {
+  margin-top: 5%;
+  margin-left: -1%;
+}
+.SA {
+  margin-top: 5%;
+  margin-bottom: 40%;
+  margin-left: -1%;
+}
+.SUimg,
+.SAimg,
+.SSimg {
+  position: relative;
+}
+.SUimg,
+.SAimg {
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+.SSimg {
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+.SUtxt,
+.SStxt,
+.SAtxt {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.SUtxt,
+.SAtxt,
+.SStxt {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.SStxt:hover,
+.SUtxt:hover,
+.SAtxt:hover {
+  transition: ease 0.2s;
+}
+.arrow {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.arrow:hover {
+  color: rgb(0, 47, 88);
+  transition: ease-in 0.1s;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* SU page CSS */
+.SUrule,
+.VisMis {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  left: 300px;
+  top: 600px;
+}
+.SUrule {
+  margin-bottom: 50%;
+}
+.VisMis {
+  border: rgba(0, 0, 0, 1) solid 1px;
+  padding: 20px;
+  text-decoration: underline;
+  font-size: 35px;
+  color: #668efd;
+  flex-direction: column;
+  margin-top: -100px;
+  margin-bottom: 10%;
+}
+.contact {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+}
+.icons {
+  color: #6b93ff;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Student Activity page */
+.cultureNight,
+.artfestival,
+.openday {
+    position: relative;
+    display: flex;
+    grid-column: 1/4;
+    top: 500px;
+
+}
+.cultureNight {
+    margin-bottom: 10px;
+    left: 150px;
+}
+.artfestival {
+    margin-bottom: 10px;
+    left: 200px;
+}
+.openday {
+    margin-bottom: 3%;
+    left: 250px;
+}
+.CNtxt,
+.AFtxt,
+.OPtxt {
+    font-size: 30px;
+    color: #668efd;
+    padding-left: 50px;
+}
+.uppertxt {
+    font-size: 14px;
+    color:black;
+    width: 450px;
+}
+.basketball,
+.club,
+.cdp  {
+    position: relative;
+    display: flex;
+    grid-column: 1/4;
+    flex-direction: row;
+    justify-content: center;
+    top: 500px;
+    width: fit-content;
+}
+.basketball{
+    left: 500px;
+}
+.club {
+    margin-top: 10px;
+    left: 600px;
+}
+.cdp {
+    margin-top: 10px;
+    left: 450px;
+    margin-bottom: 50%;
+
+}
+.SAText {
+    font-size: 35px;
+    padding-right: 20px;
+    color: #668efd;
+}
+.cdptxt {
+    font-size: 30px;
+    padding-right: 20px;
+    color: #668efd;
+}
+.cdptxt1 {
+    font-size: 14px;
+    padding-right: 20px;
+    color:black;
+    width: 400px;
+}
+.bbtxt,
+.clubtxt,
+.textsize {
+    font-size: 14px;
+    color:black;
+    width: 400px;
+}
+
+.textsize {
+    font-size: 12px;
+    font-weight: bold;
+}

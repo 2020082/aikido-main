@@ -1,0 +1,270 @@
+
+.container {
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  font-family: "Helvetica", sans-serif;
+  }
+
+.backgroundImg {
+    opacity: 0.3;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-image: url(../../public/images/programImg/LEIbackground.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+}
+
+.rectangle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 450px;
+  background-color: #4070f4;
+  overflow: hidden;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  left: 30%;
+  margin-top: 35%;
+}
+
+
+.quarter {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  opacity: 0.8;
+}
+
+.quarter:hover {
+  background-color: #4070f4;
+  opacity: 1;
+}
+.quarter:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.quarter:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-bottom: 4px solid white;
+}
+
+.quarter:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-right: 4px solid white;
+}
+
+.quarter:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.coursebox1,
+.coursebox2,
+.coursebox3,
+.coursebox4,
+.coursebox5 {
+  width: 250px;
+  height: 50px;
+  border-right: rgba(64, 112, 244, 0.2) solid 1px;
+  border-bottom: rgba(64, 112, 244, 0.2) solid 1px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: bold;
+
+}
+.coursebox1 {
+  margin: 100px 200px 0%;
+  border-top: rgba(64, 112, 244, 0.2) solid 1px;
+}
+.coursebox2,
+.coursebox3,
+.coursebox4 {
+  margin-left: 200px;
+}
+
+.coursebox5 {
+  margin-left: 200px;
+  margin-bottom: 10%;
+}
+.coursebox1:hover {
+  color: #4070f4;
+  font-weight: bold;
+ 
+}
+.coursebox1:hover .coursebox11{
+  display: flex;
+  width: 600px;
+  height: auto;
+  background-color: #ffffff;
+  color: black;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80%;
+  font-weight: normal;
+}
+
+.coursebox11 {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  margin-left: 400%; 
+  background-color: #4070f4;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.coursebox2:hover {
+  color: #4070f4;
+  font-weight: bold;
+ 
+}
+.coursebox2:hover .coursebox22{
+  display: flex;
+  width: 600px;
+  height: auto;
+  background-color: #ffffff;
+  color: black;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40%;
+  font-weight: normal;
+  white-space-collapse: normal;
+  
+}
+.coursebox22 {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  margin-left: 400%;
+  background-color: #4070f4;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.coursebox3:hover {
+  color: #4070f4;
+  font-weight: bold;
+ 
+}
+.coursebox3:hover .coursebox33{
+  display: flex;
+  width: 600px;
+  height: auto;
+  background-color: #ffffff;
+  color: black;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0%;
+  font-weight: normal;
+  
+}
+.coursebox33 {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  margin-left: 400%; 
+  background-color: #4070f4;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.coursebox4:hover {
+  color: #4070f4;
+  font-weight: bold;
+ 
+}
+.coursebox4:hover .coursebox44{
+  display: flex;
+  width: 600px;
+  height: auto;
+  background-color: #ffffff;
+  color: black;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40%;
+  font-weight: normal;
+  
+}
+.coursebox44 {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  margin-left: 400%; 
+  background-color: #4070f4;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.coursebox5:hover {
+  color: #4070f4;
+  font-weight: bold;
+ 
+}
+.coursebox5:hover .coursebox55{
+  display: flex;
+  width: 600px;
+  height: auto;
+  background-color: #ffffff;
+  color: black;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: -90%;
+  font-weight: normal;
+  
+}
+.coursebox55 {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  margin-left: 400%; 
+  background-color: #4070f4;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}

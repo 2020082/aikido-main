@@ -1,0 +1,44 @@
+.marquee-container {
+  font-size: 80px;
+  font-style: italic;
+  background: linear-gradient(to right, blue, purple);
+  display: flex;
+  align-items: center;
+  height: 400px;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+
+.content-wrapper {
+  padding-inline: 8px;
+  display: flex;
+  column-gap: 16px;
+  color: #fff;
+  align-items: center;
+  animation: scroll 50s linear infinite;
+  
+}
+.content-wrapper p {
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+@keyframes scroll {
+  from {
+  transform: translateX(0);
+  }
+  to {
+  transform: translateX(-100%);
+  }
+}
+
+  /* Add this to make the marquee seamless */
+  .content-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    animation: scroll 50s linear infinite;
+    animation-delay: 50s;
+  }

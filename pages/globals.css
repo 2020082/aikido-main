@@ -1,0 +1,109 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+html,body{
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  margin:0;
+  padding:0;
+}
+:root {
+  --foreground-color: #000; /* Default foreground color */
+  --background-color: #fff; /* Default background color */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway";
+}
+main {
+  flex: 1;
+}
+.menu-container{
+  position: fixed;
+  right: 0;
+  z-index: 998;
+}
+header{
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+.sidebar {
+  position: absolute;
+  z-index: 1000;
+}
+.flag{
+  position: absolute;
+  right: 10px;
+  z-index: 999;
+}
+.search-bar-container {
+  position: absolute;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.search-bar-container.visible {
+  opacity: 1;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+body {
+  background-color: var(--background-site);
+  color: var(--text-high-contrast);
+
+}
+
+
+footer{
+  bottom:0;
+  width:100%;
+  z-index: 1000;
+}
+
+.fade-in {
+  animation: fadeIn 3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ .miutitle{
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+ }
+
+ .shape {
+  width: 500px;
+  height: 500px;
+  border-radius: 9999px;
+ }
+ .bg-blur{
+  filter: blur(190px);
+ }
+

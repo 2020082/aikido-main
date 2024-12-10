@@ -1,0 +1,191 @@
+.container {
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    font-family: "Helvetica", sans-serif;
+}
+
+.Exboxes {
+    width: 300px; /* Adjusted width to accommodate three boxes */
+    height: 600px;
+    background-color: #4070f4;
+    margin: 25% 50px 30%; /* Center the container horizontally */
+    opacity: 0.8;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Align boxes vertically */
+    justify-content: center; /* Space the boxes evenly */
+    align-items: center;
+    text-align: center;
+    position: relative; /* Position relative for the lines */
+    z-index: 10;
+    top: 30vh;
+    left: 3vh;
+
+}
+
+.Exbox1,
+.Exbox2,
+.Exbox3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+
+}
+.Exbox1 {
+    z-index: 5;
+}
+.Exbox2 {
+    z-index: 6;
+}
+.Exbox3 {
+    z-index: 7;
+}
+.ExText1,
+.ExText2,
+.ExText3 {
+    display: none;
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    z-index: 15; /* Ensure text is above the image */
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+
+  }
+.Eximg1 {
+    z-index: 2;
+}
+.Exbox1:hover,
+.Exbox2:hover,
+.Exbox3:hover {
+    opacity: 1;
+    color: #ffffff;
+    z-index: 2;
+    background-color: black;
+
+}
+
+
+.Exbox1:hover .ExText1,
+.Exbox2:hover .ExText2,
+.Exbox3:hover .ExText3 {
+    display: flex;
+    position: absolute;
+    width: 800px;
+    height: auto;
+    color: black;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px; 
+    top: 59%; 
+    left: 150%; 
+
+}
+
+.Exbox1:hover .Eximg1 {
+    margin-left: 350%;
+    margin-top: 132.8%;
+    opacity: 0.6;
+    position: absolute;
+    background-image: url(../../public/images/programImg/programImg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450%;
+    height: 100%;
+
+}
+.Exbox1:hover .viewProgram {
+    display: flex;
+    position: absolute;
+    width: 450px;
+    height: 45px;
+    border-radius: 45px;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; 
+    top: calc(90% + 5px); 
+    left: 300%; 
+    z-index: 30;
+    opacity: 1; 
+}
+.viewProgram {
+    display: none;
+}
+.Exbox1:hover .viewProgram:hover {
+    opacity: 1;
+    background-color: none;
+    color: #4070f4;
+}
+
+.Exbox2:hover .Eximg2 {
+    margin-left: 350%;
+    margin-top: 0%;
+    opacity: 0.6;
+    position: absolute;
+    background-image: url(../../public/images/programImg/albani.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450%;
+    height: 100%;
+
+}
+.Exbox2:hover .TpTprogram {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 45px;
+    border-radius: 45px;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; 
+    top: calc(90% + 5px); 
+    left: 330%; 
+    z-index: 30;
+    opacity: 1; 
+}
+.TpTprogram {
+    display: none;
+}
+.Exbox2:hover .TpTprogram:hover {
+    opacity: 1;
+    background-color: none;
+    color: #4070f4;
+}
+.Exbox3:hover .Eximg3 {
+    margin-left: 350%;
+    margin-top: -133.4%;
+    opacity: 0.6;
+    position: absolute;
+    background-image: url(../../public/images/programImg/Vision-Trip.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450%;
+    height: 100%;
+    border: rgba(64, 112, 244, 0.2) solid 0.1px;
+
+}

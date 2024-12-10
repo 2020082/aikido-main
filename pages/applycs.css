@@ -1,0 +1,55 @@
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  width: 48%; /* Adjust width as needed */
+  position: relative;
+  margin-left: 30px;
+}
+
+.input-label label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555; /* Adjust label color */
+}
+
+.input-label label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #007bff; /* Adjust dot color */
+  border-radius: 50%;
+}
+.input-group select {
+  width: calc(91% - 10px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+
+.input-group input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Optional: Hover effect for input fields */
+.input-group input:hover {
+  border-color: #007bff; /* Adjust hover color */
+}

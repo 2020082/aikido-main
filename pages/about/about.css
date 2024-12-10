@@ -1,0 +1,214 @@
+/** @format */
+
+.about-container {
+  position: relative;
+  max-width: 100%;
+  height: 40%;
+  margin: 0 auto;
+  background-image: url("../../public/aboutPage/aboutpage/aikidoAboutBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 15rem;
+}
+
+.about-image {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.button-group {
+  margin-top: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.about-text {
+  position: absolute;
+  font-size: 3rem;
+  color: rgb(72, 69, 69);
+  padding: 0.6rem;
+  border: 0.3rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  display: row;
+}
+
+.sight-word {
+  color: #173992;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.sight-word1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Helvetica", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .sight-word {
+    flex-direction: row;
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .sight-word {
+    height: 15rem;
+  }
+
+  .sight-word1 {
+    font-size: 3rem;
+  }
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin-bottom: -2rem;
+}
+
+@keyframes rainbow-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  max-width: 1100px;
+  padding: 1rem;
+}
+.box3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1100px;
+  max-width: 1100px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box2 .boxImg .CeoImg .LeaderImg {
+    width: 500px;
+    height: 450px;
+  }
+}
+.CeoDescription,
+.LeaderDescription,
+.boxDescription {
+  max-width: 500px;
+  padding-right: 1rem;
+}
+.CeoImg,
+.LeaderImg,
+.boxImg {
+  width: 500px;
+  max-width: 500px;
+  height: 250px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+
+.title1 {
+  color: rgb(42, 89, 147);
+  font-size: 1.875rem;
+}
+
+.title2 {
+  color: rgb(42, 89, 147);
+  font-size: 1.875rem;
+}
+
+.title3 {
+  color: rgb(42, 89, 147);
+  font-size: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .CeoDescription,
+  .LeaderDescription,
+  .boxDescription {
+    width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .CeoImg,
+  .LeaderImg,
+  .boxImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .CeoDescription,
+  .LeaderDescription,
+  .boxDescription {
+    width: 60%;
+  }
+
+  .CeoImg,
+  .LeaderImg,
+  .boxImg {
+    width: 50rem;
+    height: 40rem;
+  }
+}
